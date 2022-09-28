@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o IMC</title>
+</head>
+<body>
+    <script>
+        var nome = prompt('Olá, qual o seu nome:')
+        var altura = prompt('Por favor, Informe sua altura:')
+        var peso = prompt('Por favor, Informe seu peso:')
+        
+        altura = parseFloat(altura)
+        peso = parseFloat(peso)
+
+        altura = altura/100;
+        var M = peso / (altura * altura)
+        var classificacao = ''
+        
+
+        if(M < 16){
+           classificacao = '<h1>Baixo peso muito grave!</h1>'
+        }else if((M >= 16)&&(M <=16.99)){
+            classificacao = '<h1>Baixo peso grave!</h1>'
+        }else if((M >= 17)&&(M <=18.49)){
+           classificacao = '<h1>Baixo peso!</h1>'
+        }else if((M >=18.50)&&(M <=24.99)){
+            classificacao = '<h1>Peso normal!</h1>'
+        }else if((M >= 25)&&(M <=29.99)){
+            classificacao = '<h1>Sobre peso</h1>'
+        }else if((M >= 30)&&(M <=34.99)){
+            classificacao = '<h1>Obesidade Grau I</h1>'
+        }else if((M >= 35)&&(M <=39.99)){
+            classificacao = '<h1>Obesidade Grau II</h1>'
+        }else{
+            classificacao = '<h1>Obesidade Mórbida</h1>'
+        }
+        
+        
+        document.write('<h1>'+nome+' Seu IMC é ('+ M +') e esta classificado como "'+classificacao+'"</h1>')
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
