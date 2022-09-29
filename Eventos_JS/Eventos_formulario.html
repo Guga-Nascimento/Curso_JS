@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janela</title>
+    <script>
+
+
+    </script>
+</head>
+<body onresize="console.log('eventodisparado')">
+
+    <ul>
+        <li>onfocus</li>
+        <p>Acionado quando o elemento recebe o focus do cursor do mouse</p>
+        <li>onblur</li>
+        <p>Acionado quando o elemento perde o focus</p>
+    </ul>
+<div >
+    <div  style="background-color: gray; height: 3000px" >
+
+        <input onfocus="console.log('teste')" type="text"/>
+        <input onblur="console.log('teste000002')" type="text"/>
+
+    </div>
+</div>    
+</body>
+</html>

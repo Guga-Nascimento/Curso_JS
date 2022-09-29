@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funçoes_Nativas</title>
+</head>
+<body>
+    <script>
+        var data = new Date()
+       // document.write(data.getDate() + '/' +(data.getMonth() + 1) + '/' + data.getFullYear())
+   
+        
+      /*  document.write(data.toString())
+        data.setDate(data.getDate() + 2)
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<br> <br> <hr>')
+
+        document.write(data.toString())
+        data.setMonth(data.getMonth() + 220)
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<br> <br> <hr>')
+
+        document.write(data.toString())
+        data.setFullYear(data.getFullYear() + 2)
+        document.write('<hr />')
+        document.write(data.toString()) */
+
+        var data1 = new Date(2022,8,15)
+        var data2 = new Date(2024,1,18)
+
+        document.write(data1.toString())
+        document.write('<br><hr /><br>')
+        document.write(data2.toString()) 
+
+        document.write('<br> <br> <hr>')
+        document.write('<br> <br> <hr>')
+
+        document.write(data1.getTime())
+        document.write('<br><hr /><br>')
+        document.write(data2.getTime())
+       
+        document.write('<br> <br> <hr>')
+        document.write('<br> <br> <hr>')
+        var mil_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+        document.write(mil_entre_datas)
+
+        document.write('<br> <br> <hr>')
+        document.write('<br> <br> <hr>')
+
+        var milissegundos_por_dia = (1*24*60*60*1000)
+        document.write('1 dia tem '+ milissegundos_por_dia +' milissegundos')
+
+        document.write('<br> <br> <hr>')
+        document.write('<br> <br> <hr>')
+
+        document.write('A diferença entre as datas é ' + Math.ceil(mil_entre_datas / milissegundos_por_dia) + ' dias')
+
+
+    </script>
+</body>
+</html>

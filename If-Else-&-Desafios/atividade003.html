@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma ou Subtração</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt('Digite o primeiro número da operação:')
+        var op = prompt('Digite (1) para adição ou (2) para subtração:')
+        var num2 = prompt('Digite o segundo número da operação:')
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+        /*op = parseInt(op)*/
+
+        if(op === '+'){
+            document.write('O resultado é ' + (num1 + num2) + ' <br><h2>Operação realizada com sucesso')
+        }else if( op === '-'){
+            document.write('O resultado é ' + (num1 - num2) + ' <br><h2>Operação realizada com sucesso')
+        }else{
+            document.write('Dados inválidos reinicie a operação recarregando a página.')
+        }
+
+
+        
+    </script>
+</body>
+</html>

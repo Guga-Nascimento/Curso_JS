@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes2</title>
+</head>
+<body>
+    <script>
+        document.write('<h3>O escopo de uma função é individual, não elevando as var criadas dentro do seu escopo</h3>')
+
+        document.write('<h3>Funçoes anonimas, são as funçoes sem nome [nomeFuncao()]<br> Para chamar a function anonima basta criar um var e chama-la com o sinal () na frente.</h3>')
+
+        document.write('<h1> CaalBack</h1><br><br><br>')
+
+            ///////////////////////////////////////////////
+
+        function exibirArtigo (id,callbackSucesso,callbackErro){
+            //lógica: recuperar o id via requisição http
+            if(true){
+                callbackSucesso('titulo','descrição')
+            }else{
+                callbackErro('erro')
+            }        
+        }
+            var callbackSucesso = function (titulo, descricao){
+                document.write('<h1>'+titulo+'</h1>')
+                document.write('<hr />')
+                document.write('<p>'+descricao+'</p>')
+            }
+            var callbackErro = function (erro){
+                document.write('<p><strong>Erro</strong>'+erro+'</p>')
+            }
+            exibirArtigo(1,callbackSucesso,callbackErro)
+
+
+    </script>
+</body>
+</html>

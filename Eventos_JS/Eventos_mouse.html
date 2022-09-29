@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <script>
+        function acao(){
+            alert('Evento disparado')
+        }
+    </script>
+
+</head>
+<body>
+    <span>
+                    <h1>Mouse</h1>
+        <ul>
+            <li><strong>onclick</strong></li>
+            <p>Acionado quando o elemento é clicado</p>
+            <li><strong>ondblclick</strong></li>
+            <p>Acionado quando o elemento é clicado duas vezes</p>
+            <li><strong>onmouseup</strong></li>
+            <p>Acionado quando o click sobre o elemento determinado é liberado</p>
+            <li><strong>onmouseover</strong></li>
+            <p>Acionado quando o cursor do mouse sobre-põe o elemento</p>
+            <li><strong>onmouseout</strong></li>
+            <p>Acionado quando o cursor do mouse sai da região da página oculpada pelo o elemento</p>
+        </ul>
+    </span>
+    <div onclick="alert('Teste')" style="background:#ccc; height: 150px; width: 150px"></div>
+    <hr>
+    <hr><hr>
+    <div onclick="acao()" style="background:green; height: 150px; width: 150px"></div>
+    <h2>Aqui vimos que quando clicamos na area da div é feita a acao do onclick</h2>
+    
+    <hr>
+    <hr><hr>
+    <div ondblclick="alert('Teste')" style="background:red; height: 150px; width: 150px"></div>
+    <hr>
+    <hr><hr>
+    <h2>Aqui vimos que quando clicamos na area da div é feita a acao do ondblclick</h2>
+    <hr>
+    <hr><hr>
+
+    <div onmouseover="alert('Teste')" style="background:yellow; height: 150px; width: 150px"></div>
+    <hr>
+    <hr><hr>
+    <div onmouseout="alert('Teste')" style="background: black; height: 150px; width: 150px"></div>
+    <hr>
+    <hr><hr>
+    <div onmouseup="alert('Teste')" style="background: pink; height: 150px; width: 150px"></div>
+
+
+
+
+
+
+
+
+</body>
+</html>
