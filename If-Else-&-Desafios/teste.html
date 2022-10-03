@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Javascript</title>
+
+<script>
+
+var artigos = Array('Cadeira', 'Mesa', 'Sanita') //criação de Array de artigos
+
+console.log(artigos)
+
+
+
+function adicionarArtigos(){
+
+
+
+var artigo_adci = document.getElementById('artigo').value //buscar o valor introduzido em id="artigo"
+
+
+
+if (artigo_adci === '') { //se o valor for vazio pedir um valor válido
+
+alert('Artigo inválido')
+
+}
+
+else {
+
+if (artigos.indexOf(artigo_adci) !== -1) { //se a procura do valor for diferente de '1 (já existir), avisar que já existe'
+
+alert('Artigo já existente')
+
+}
+
+else {
+
+artigos.push(artigo_adci) //adiciona ao Array
+
+console.log(artigos) //faz debug
+
+
+
+document.getElementById('artigo').value = '' //limpa o botão
+
+}
+
+}
+
+}
+
+
+
+function ordenarArtigos() {
+
+artigos.sort()
+
+console.log(artigos)
+
+}
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<input type="text" id="artigo">
+
+<button onclick="adicionarArtigos()">Adicionar novo</button>
+
+<button onclick="ordenarArtigos()">Ordenar Artigos</button>
+
+
+
+
+
+</body>
+
+</html>
